@@ -1,0 +1,68 @@
+body {
+    background-color: #323232; /* Hintergrundfarbe der gesamten Seite */
+    font-family: "Comic Sans MS", sans-serif; /* Schriftart */
+    margin: 0;
+}
+h1 {
+    margin-top: 80px;
+    text-align: center;
+}
+#content {
+    margin-top: 200px;
+    color: rgb(252, 0, 0); /* Textfarbe auf der Seite */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Ermöglicht die absolute Positionierung der Linie */
+}
+table {
+    width: 300px; /* Größe der Tabelle */
+    height: 300px; /* Größe der Tabelle */
+    border-collapse: collapse; /* Ränder der Zellen zusammenfassen */
+    margin: 0; /* Kein Außenrand */
+}
+td {
+    width: 100px; /* Größe der Zellen */
+    height: 100px; /* Größe der Zellen */
+    text-align: center;
+    font-size: 3em; /* Größe der Schrift für X und O */
+    cursor: pointer;
+}
+table {
+    border-collapse: collapse;
+}
+table td {
+    border: 5px solid rgb(255, 255, 255); 
+}
+table tr:first-child td {
+    border-top: 0;
+}
+table tr td:first-child {
+    border-left: 0;
+}
+table tr:last-child td {
+    border-bottom: 0;
+}
+table tr td:last-child {
+    border-right: 0;
+}
+td:hover {
+    background-color: #555; /* Hover-Farbe für Zellen */
+}
+.winner-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: white;
+}
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.winner-line {
+    position: absolute;
+    background-color: red;
+    z-index: 10;
+}
